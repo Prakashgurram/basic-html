@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-<body>
+resource aws_instance "terrInstance" {
+        ami = "ami-09d56f8956ab235b3"
+        instance_type = "t2.micro"
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>
+        tags = {
+	Name = "Terraform Instance"
+        }
+}
